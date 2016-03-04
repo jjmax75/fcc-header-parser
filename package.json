@@ -1,0 +1,31 @@
+{
+  "name": "fcc-header-parser",
+  "version": "1.0.0",
+  "description": "A header parser microservice built on Node and Express JS using the Clementine JS Framework",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjmax75/fcc-header-parser.git"
+  },
+  "homepage": "https://nameless-garden-79631.herokuapp.com/",
+  "bugs": "https://github.com/jjmax75/fcc-header-parser/issues",
+  "keywords": [
+    "Express",
+    "Node",
+    "Javascript"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debug": "nodemon --debug server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Behan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4"
+  },
+  "engines": {
+    "node": "4.3.1"
+  }
+}
