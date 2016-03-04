@@ -11,6 +11,7 @@ function WhoAmI() {
       ip = list[list.length-1];
     } else {
       ip = req.connection.remoteAddress;
+      ip = ip.match(/:(\d.*)/)[1];
     }
 
     var language = req.headers["accept-language"];
@@ -18,7 +19,6 @@ function WhoAmI() {
 
     os = os.match(/\((.*)\)/)[1]; // capture OS only, within brackets
     language = language.match(/(.*),/)[1]; // capture language bit before comma
-    ip = ip.match(/:(\d.*)/)[1];
 
     var headerObject = {
       "ipaddress": ip,
